@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherEasy</title>
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/WeatherLogo.png" width="80" height="58" />
+            </a>
+
+            <div class="search-view" data-search-view>
+                <div class="search-wrapper">
+                    <input type="search" name="search" class="search-field" placeholder="Search city..."
+                        autocomplete="off" data-search-field />
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                        <span class="m-icon"><span class="material-symbols-outlined">
+                            arrow_back
+                            </span></span>
+                    </button>
+                </div>
+
+                <div class="search-result" data-search-result>
+                    <ul class="view-list" data-search-list>
+                        <li class="view-item">
+                            <span class="m-icon"><span class="material-symbols-outlined">
+                                location_on
+                                </span></span>
+
+                            <div>
+                                <p class="item-title">London</p>
+                                <p class="label-2 item-subtitle">State of London GB</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                    <span class="m-icon"><span class="material-symbols-outlined">
+                        search
+                        </span></span>
+                </button>
+
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
+                    <span class="m-icon"><span class="material-symbols-outlined">
+                        my_location
+                        </span></span>
+                    <span class="span">Current location</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
