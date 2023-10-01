@@ -82,7 +82,7 @@ function currentLocationBtnOnEnter(params) {
 
 function searchBarOnEnter() {
   const searchText = $("#searchField").val();
-  const currentApiUrl = `http://api.weatherapi.com/v1/current.json?key=542daace8d6e436fb44155115231909&q=${searchText}`;
+  const currentApiUrl = `https://api.weatherapi.com/v1/current.json?key=542daace8d6e436fb44155115231909&q=${searchText}`;
 
   $.ajax({
     method: "GET",
@@ -118,7 +118,7 @@ function searchBarOnEnter() {
 
   $.ajax({
     method: "GET",
-    url: `http://api.weatherapi.com/v1/forecast.json?key=542daace8d6e436fb44155115231909&q=${searchText}&days=5`,
+    url: `https://api.weatherapi.com/v1/forecast.json?key=542daace8d6e436fb44155115231909&q=${searchText}&days=5`,
     success: (resp) => {
       console.log(resp);
       $("#forecastIcon1").attr(
