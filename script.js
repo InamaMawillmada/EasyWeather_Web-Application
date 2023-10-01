@@ -19,7 +19,7 @@ function getLocation() {
 }
 
 function currentLocationBtnOnEnter(params) {
-  const currentApiUrl = `http://api.weatherapi.com/v1/current.json?key=542daace8d6e436fb44155115231909&q=${
+  const currentApiUrl = `https://api.weatherapi.com/v1/current.json?key=542daace8d6e436fb44155115231909&q=${
     lat + "," + lon
   }`;
 
@@ -49,7 +49,7 @@ function currentLocationBtnOnEnter(params) {
 
   $.ajax({
     method: "GET",
-    url: `http://api.weatherapi.com/v1/forecast.json?key=542daace8d6e436fb44155115231909&q=${
+    url: `https://api.weatherapi.com/v1/forecast.json?key=542daace8d6e436fb44155115231909&q=${
       lat + "," + lon
     }&days=5`,
     success: (resp) => {
